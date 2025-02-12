@@ -98,8 +98,8 @@ tuyatime = str(int(time.time()) * 1000)
 if debug:
     print("Tuyatime is now", tuyatime)
 
-# Ottenere il token di accesso
-access_token = get_access_token(ClientID, ClientSecret, BaseUrl, EmptyBodyEncoded,tuyatime, debug)
+access_token = get_access_token(ClientID, ClientSecret, BaseUrl, EmptyBodyEncoded, tuyatime, debug)
 
-# Ottenere informazioni sui dispositivi
+print("*********showing device info")
+print(ClientID, ClientSecret, BaseUrl, EmptyBodyEncoded, tuyatime, access_token, deviceList, debug)
 get_device_info(ClientID, ClientSecret, BaseUrl, EmptyBodyEncoded, tuyatime, access_token, deviceList, debug)
