@@ -1,5 +1,4 @@
 config.secret.json
-config.json
 secrets.yaml
 .idea
 # Byte-compiled / optimized / DLL files
